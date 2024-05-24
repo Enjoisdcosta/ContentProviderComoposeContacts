@@ -96,8 +96,7 @@ class MainActivity : ComponentActivity() {
 //    fun ItemListScreen(navController: NavHostController) {
 //        // Sample list of items
 //        val items = listOf(
-//            Item(1, "Item 1", "Description for item 1", "https://via.placeholder.com/300"),
-//            Item(2, "Item 2", "Description for item 2", "https://via.placeholder.com/300")
+//
 //        )
 //        LazyColumn {
 //            items(items) { item ->
@@ -107,7 +106,7 @@ class MainActivity : ComponentActivity() {
 //                        .fillMaxWidth()
 //                        .padding(16.dp)
 //                        .clickable {
-//                            navController.navigate("detail/${item.id}")
+//                            navController.navigate("screen/${item.id}")
 //                        }
 //                )
 //            }
