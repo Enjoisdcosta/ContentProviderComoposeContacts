@@ -62,8 +62,6 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
                 ) {
 
-
-
                     ContactList(contacts = getContactList(this))
 
                 }
@@ -95,7 +93,7 @@ class MainActivity : ComponentActivity() {
 //    @Composable
 //    fun ItemListScreen(navController: NavHostController) {
 //        // Sample list of items
-//        val items = listOf(
+//        val items = listOf(Cont
 //
 //        )
 //        LazyColumn {
@@ -156,14 +154,18 @@ class MainActivity : ComponentActivity() {
     @Composable
     fun SimpleButton() {
         // State to hold the button click count
-        var clickCount by remember { mutableStateOf(0) }
+        var clickCount by remember {
+            mutableStateOf(0)
+        }
 
         // Center the button in the screen
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier.fillMaxSize()
         ) {
-            Button(onClick = { clickCount++ }) {
+            Button(onClick = {
+                clickCount++
+            }) {
                 Text(text = "Click me! Count: $clickCount")
             }
         }
